@@ -41,11 +41,13 @@ files that you create!
 Synthesizing Tasks
 ==================
 
+Our final tasks this week explores a more complex case of using multiple
+functions, chained together to reduce repetition.
+
 Task 01
 -------
 
-Our final task this week explores a more complex case of using multiple
-functions, chained together to reduce repetition.
+Converting a Fahrenheit temperature to Celsius.
 
 Specifications
 ^^^^^^^^^^^^^^
@@ -63,29 +65,6 @@ Specifications
 
 4.  Return the temperature as a decimal in degrees Celsius
 
-5.  Below your ``import`` statement but above any function definitions, create
-    a new constant called ``ABSOLUTE_DIFFERENCE`` and set it's value to a
-    *decimal* of ``273.15``
-
-6.  Create a second function called ``celsius_to_kelvin()`` that has one
-    parameter:
-
-    1.  ``degrees``
-
-7.  Use the following formula to convert the degrees Celsius to degrees Kelvin:
-
-    1.  add ``ABSOLUTE_DIFFERENCE`` to ``degrees``
-
-8.  Return the temperature as a decimal in degrees Kelvin
-
-9.  Create a third and final function ``fahrenheit_to_kelvin()`` that has one
-    parameter:
-    
-    1.  ``degrees``
-
-10. Use ``fahrenheit_to_celsius()`` and ``celsius_to_kelvin()`` to convert
-    Fahrenheit temperatures to Kelvin and return the result as a number.
-
 Examples
 ^^^^^^^^
 
@@ -94,8 +73,61 @@ Examples
     >>> fahrenheit_to_celsius(212)
     Decimal('100')
 
+Task 02
+-------
+
+Converting a Celsius temperature to Kelvin.
+
+Specifications
+^^^^^^^^^^^^^^
+
+1.  Open ``task_01.py``
+
+2.  Below your ``import`` statement but above any function definitions, create
+    a new constant called ``ABSOLUTE_DIFFERENCE`` and set it's value to a
+    *decimal* of ``273.15``
+
+3.  Create a second function called ``celsius_to_kelvin()`` that has one
+    parameter:
+
+    1.  ``degrees``
+
+4.  Use the following formula to convert the degrees Celsius to degrees Kelvin:
+
+    1.  add ``ABSOLUTE_DIFFERENCE`` to ``degrees``
+
+5.  Return the temperature as a decimal in degrees Kelvin
+
+Examples
+^^^^^^^^
+
+.. code:: pycon
+
     >>> celsius_to_kelvin(100)
     Decimal('373.15')
+
+Task 03
+-------
+
+Converting a Fahrenheit temperature to Kelvin.
+
+Specifications
+^^^^^^^^^^^^^^
+
+1.  Open ``task_01.py``
+
+2.  Create a third and final function ``fahrenheit_to_kelvin()`` that has one
+    parameter:
+    
+    1.  ``degrees``
+
+3.  Use ``fahrenheit_to_celsius()`` and ``celsius_to_kelvin()`` to convert
+    Fahrenheit temperatures to Kelvin and return the result as a number.
+
+Examples
+^^^^^^^^
+
+.. code:: pycon
 
     >>> fahrenheit_to_kelvin(212)
     Decimal('373.15')
