@@ -65,6 +65,12 @@ Specifications
 
 4.  Return the temperature as a decimal in degrees Celsius
 
+.. hint::
+
+    You might want to think about *where* your decimal conversion takes place
+    since you might want it to happen early enough to allow ``degrees`` to
+    be something like ``'26.389'``
+
 Examples
 ^^^^^^^^
 
